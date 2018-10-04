@@ -1,3 +1,5 @@
+@media only screen and (max-width: 500px) {
+
 body {
 	width: 100%;
 	height: 100%;
@@ -206,4 +208,224 @@ input[type="text"]::placeholder {
 	margin: 10%;
 	color: red;
 	font-size: 15px;
+}
+
+}
+
+
+@media only screen and (min-width: 500px) {
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#screen {
+	height: 600px;
+	width: 400px;
+	position: absolute;
+	background: #E1F5FE;
+	overflow: hidden;
+	margin: 0 35%;
+	border: solid black 5px;
+	box-sizing: border-box;
+}
+#nav {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+	height: 60px;
+	z-index: 1;
+}
+#nav #clear {
+	position: absolute;
+	left: 0;
+	width: 48%;
+	border: solid white 2px;
+	line-height: 60px;
+	height: 100%;
+	background: #01579B;
+	color: #B3E5FC;
+}
+#nav #inputCont {
+	position: absolute;
+	right: 0;
+	width: 48%;
+	border: solid white 2px;
+	line-height: 60px;
+	height: 100%;
+	background: #01579B;
+	color: #B3E5FC;
+}
+#card {
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	z-index: 1;
+	margin-top: 10%;
+}
+#dayCont {
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	height: 50px;
+}
+#dayCont #prev {
+	position: absolute;
+	width: 15%;
+	left: 0;
+	top: 0;
+	line-height: 45px;
+	height: 100%;
+	background: #01579B;
+	color: #B3E5FC;
+	border: solid 2px white;
+	box-sizing: border-box;
+}
+#dayCont #next {
+	position: absolute;
+	width: 15%;
+	right: 0;
+	top: 0;
+	line-height: 45px;
+	height: 100%;
+	background: #01579B;
+	color: #B3E5FC;
+	border: solid 2px white;
+	box-sizing: border-box;
+}
+#dayCont #dayText {
+	line-height: 45px;
+	width: 65%;
+	height: 100%;
+	text-align: center;
+	border: solid 2px white;
+	position: absolute;
+	top: 0;
+	left: 17%;
+	box-sizing: border-box;
+	background: #01579B;
+	color: #B3E5FC;
+}
+.listCont {
+	display: none;
+	width: 98%;
+	margin: 10% 1% 0 1%;
+}
+.listCont ul {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+	transition: all 1s ease-in-out;
+}
+.listCont li {
+	text-align: left;
+	list-style-type: none;
+	width: 100%;
+	font-size: 20px;
+	padding: 7px 5px;
+	margin-top: 1.5%;
+	position: relative;
+	background: #B3E5FC;
+	border: solid 1px #01579B;
+	box-sizing: border-box;
+	color: #01579B;
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.listCont button {
+	width: 12%;
+	height: 100%;
+	font-size: 20px;
+	border: none;
+	border-left: solid 1px #01579B;
+	position: absolute;
+	right: 0;
+	top: 0;
+	box-sizing: border-box;
+	background: #81C784;
+	color: #01579B;	
+}
+.listCont .hide {
+	margin-left: -200%;
+	opacity: 0;
+	transition: opacity .5s, margin-left .7s linear;
+}
+#inputScreen {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: #01579B;
+	color: #B3E5FC;
+}
+#inputScreen #close {
+	height: 80px;
+	width: 80px;
+	font-size: 60px;
+	line-height: 80px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #B3E5FC;
+	color: #01579B;
+}
+#inputScreen #input {
+	width: 80%;
+	margin: 50% 10% 0 10%;
+	padding: 0 5px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	background: #B3E5FC;
+	color: #01579B;
+	border: solid white 1px;
+	box-sizing: border-box;
+}
+input[type="text"]::placeholder {
+	color: #01579B;
+	opacity: 1;
+}
+#inputScreen #dayChoice {
+	width: 80%;
+	margin: 10% 10% 0 10%;
+	box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+	background: #B3E5FC;
+	color: #01579B;	
+	border: solid white 1px;
+	font-size: 20px;
+}
+#inputScreen #dayChoice option {
+	font-size: 20px;
+}
+#inputScreen #submit {
+	font-size: 20px;
+	width: 80%;
+	margin: 10%;
+	height: 50px;
+	line-height: 50px;	
+	box-sizing: border-box;
+	background: #B3E5FC;
+	color: #01579B;	
+	border: solid white 1px;
+}
+#inputScreen #errorMsg {
+	width: 80%;
+	margin: 10%;
+	color: red;
+	font-size: 15px;
+}
+
 }
