@@ -378,6 +378,14 @@ function deleteTask() {
 	var thursItems = JSON.parse(localStorage.getItem("thursList"));
 	var friItems = JSON.parse(localStorage.getItem("friList"));
 	var satItems = JSON.parse(localStorage.getItem("satList"));
+	if (allItems == null) allItems = [];
+	if (sunItems == null) sunItems = [];
+	if (monItems == null) monItems = [];
+	if (tuesItems == null) tuesItems = [];
+	if (wedsItems == null) wedsItems = [];
+	if (thursItems == null) thursItems = [];
+	if (friItems == null) friItems = [];
+	if (satItems == null) satItems = [];
 	if (satItems.includes(this.nextSibling.innerHTML) == true) {
 		satIndex = satItems.indexOf(this.nextSibling.innerHTML);
 		satItems.splice(satIndex, 1);
