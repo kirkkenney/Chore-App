@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 
 body {
 	width: 100%;
@@ -260,7 +260,7 @@ input[type="text"]::placeholder {
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
 
 body {
 	width: 100%;
