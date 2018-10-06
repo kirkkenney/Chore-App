@@ -425,6 +425,9 @@ function deleteTask() {
 		window.location.reload();
 	}  	
 	animate.classList.toggle("hide");
+	audio.volume = 1;
+	audio.currentTime = .5;
+	audio.play();
 	setTimeout(function() {
 		animate.style.display = "none";
 	}, 600);				
